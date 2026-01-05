@@ -211,7 +211,7 @@ MaybeError SwapChain::InitializeSwapChainFromScratch() {
     swapChainDesc.SampleDesc.Quality = 0;
     swapChainDesc.BufferUsage = mConfig.usage;
     swapChainDesc.BufferCount = mConfig.bufferCount;
-    swapChainDesc.Scaling = DXGI_SCALING_STRETCH;
+    swapChainDesc.Scaling = DXGI_SCALING_NONE;
     swapChainDesc.SwapEffect = DXGI_SWAP_EFFECT_FLIP_DISCARD;
     swapChainDesc.AlphaMode = DXGI_ALPHA_MODE_IGNORE;
     swapChainDesc.Flags = mConfig.swapChainFlags;
